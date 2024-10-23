@@ -1,1 +1,41 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: green;
+  font-family: Arial, sans-serif;
+}
+
+.carta {
+  width: 350px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 48px;
+  position: relative;
+  background-color: white;
+}
+
+.palo-superior,
+.palo-inferior {
+  position: absolute;
+  font-size: 60px;
+}
+
+.palo-superior {
+  top: 10px;
+  left: 10px;
+}
+
+.palo-inferior {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.valor {
+  font-size: 100px;
+  margin-top: 180px;
+}
